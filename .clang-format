@@ -1,0 +1,13 @@
+# I only use clang format on certain regions. Not the whole document.
+---
+BasedOnStyle: Chromium
+ColumnLimit: 120
+AlignAfterOpenBracket: Align
+PenaltyBreakBeforeFirstCallParameter: 1000
+IndentWidth: 4
+ContinuationIndentWidth: 4
+BinPackArguments: false
+BinPackParameters: false
+BreakBeforeBinaryOperators: None
+BreakBeforeBraces: Allman
+...

@@ -1,0 +1,11 @@
+TODO
+====
+
+/ Draw a square with OpenGL
+/ Keep going through LearnOpenGL.com
+/ Update Snake game with graphics drawn using OpenGL
+
+BUGS
+====
+/ Text doesn't render consistently if aspect ratio changes
+/ We don't see the letterbox of what is considered part of the app

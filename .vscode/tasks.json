@@ -1,0 +1,52 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": ".\\build-windows.bat",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "close": false
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Run",
+            "type": "shell",
+            "command": ".\\build\\main.exe",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "presentation": {
+                "reveal": "always",
+                "close": false
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "RebuildAndRun",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-Command",
+                "& { .\\build-windows.bat; if ($LASTEXITCODE -eq 0) { .\\build\\main.exe } }"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "presentation": {
+                "reveal": "always",
+                "close": false
+            },
+            "problemMatcher": []
+        }
+    ]
+}

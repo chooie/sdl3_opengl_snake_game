@@ -1,0 +1,20 @@
+[
+    {
+      "key": "alt+v",
+      "command": "toggleVim"
+    },
+    {
+      "key": "alt+b",
+      "command": "workbench.action.tasks.build"
+    },
+    {
+      "key": "alt+r",
+      "command": "workbench.action.tasks.runTask",
+      "args": "RebuildAndRun"
+    },
+    {
+      "key": "ctrl+shift+r",
+      "command": "workbench.action.tasks.runTask",
+      "args": "Run"
+    }
+  ]
